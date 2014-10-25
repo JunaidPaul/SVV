@@ -1,0 +1,10 @@
+{
+    "name": "SVV",
+    "description": "Testing incorrect program",
+    "author": "Team <team@uwo.ca>",
+    "dependencies": {
+        "chai": "*",
+        "blanket": "*"
+    }
+
+}
