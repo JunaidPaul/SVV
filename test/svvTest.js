@@ -8,7 +8,7 @@ require('blanket')({
 
 // Test cases
 var expect = require("chai").expect;
-var svv = require("../lib/svv.js");
+var svv = require("../lib/svvCorrect.js");
 
 describe("Software verification and validation", function(){
     describe("Testing Triangle module", function(){
@@ -25,7 +25,7 @@ describe("Software verification and validation", function(){
             var side2 = 2.1;
             var side3= 3;
             var results = svv.triangle(side1,side2,side3);
-            var expected= "Invalid";
+            var expected= "Scalene";
             expect(results).to.eql(expected);
         });
         it("Less than three arguments", function(){
@@ -54,7 +54,7 @@ describe("Software verification and validation", function(){
             var side2 = 234567123;
             var side3 = 234567476;
             var results = svv.triangle(side1,side2,side3);
-            var expected= "Invalid";
+            var expected= "Scalene";
             expect(results).to.eql(expected);
         });
         it("Not a triangle", function(){
